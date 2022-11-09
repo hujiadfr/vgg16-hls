@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="vgg16_system_hw_link" platform="/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm" systemProject="vgg16_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.1245811989">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="Conv" projectName="vgg16_kernels">
+          <computeUnits name="Conv_1" slr="">
+            <args name="feature_in" master="true" memory=""/>
+            <args name="W" master="true" memory=""/>
+            <args name="scale" master="true" memory=""/>
+            <args name="feature_out" master="true" memory=""/>
+            <args name="CHin"/>
+            <args name="Hin"/>
+            <args name="Win"/>
+            <args name="CHout"/>
+            <args name="Sx"/>
+            <args name="Sy"/>
+            <args name="mode"/>
+            <args name="relu_en"/>
+            <args name="pool_en"/>
+            <args name="layer"/>
+            <args name="zero_point"/>
+            <args name="invert_flag"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="Conv" projectName="vgg16_kernels">
+          <computeUnits name="Conv_1" slr="">
+            <args name="feature_in" master="true" memory=""/>
+            <args name="W" master="true" memory=""/>
+            <args name="scale" master="true" memory=""/>
+            <args name="feature_out" master="true" memory=""/>
+            <args name="CHin"/>
+            <args name="Hin"/>
+            <args name="Win"/>
+            <args name="CHout"/>
+            <args name="Sx"/>
+            <args name="Sy"/>
+            <args name="mode"/>
+            <args name="relu_en"/>
+            <args name="pool_en"/>
+            <args name="layer"/>
+            <args name="zero_point"/>
+            <args name="invert_flag"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.5872810">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="Conv" projectName="vgg16_kernels">
+          <computeUnits name="Conv_1" slr="">
+            <args name="feature_in" master="true" memory=""/>
+            <args name="W" master="true" memory=""/>
+            <args name="scale" master="true" memory=""/>
+            <args name="feature_out" master="true" memory=""/>
+            <args name="CHin"/>
+            <args name="Hin"/>
+            <args name="Win"/>
+            <args name="CHout"/>
+            <args name="Sx"/>
+            <args name="Sy"/>
+            <args name="mode"/>
+            <args name="relu_en"/>
+            <args name="pool_en"/>
+            <args name="layer"/>
+            <args name="zero_point"/>
+            <args name="invert_flag"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.349191998">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="Conv" projectName="vgg16_kernels">
+          <computeUnits name="Conv_1" slr="">
+            <args name="feature_in" master="true" memory=""/>
+            <args name="W" master="true" memory=""/>
+            <args name="scale" master="true" memory=""/>
+            <args name="feature_out" master="true" memory=""/>
+            <args name="CHin"/>
+            <args name="Hin"/>
+            <args name="Win"/>
+            <args name="CHout"/>
+            <args name="Sx"/>
+            <args name="Sy"/>
+            <args name="mode"/>
+            <args name="relu_en"/>
+            <args name="pool_en"/>
+            <args name="layer"/>
+            <args name="zero_point"/>
+            <args name="invert_flag"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
